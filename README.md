@@ -58,6 +58,13 @@ The scores are updated automatically after each round.
 * Beginner-friendly JavaScript implementation
 * Deployed using **GitHub Pages**
 
+## 🚀 Deployment
+
+This project is deployed using **GitHub Pages**.
+
+**Live Demo:**
+https://mg2658094-hub.github.io/Rock-Paper-Scissors/
+
 ## 👨‍💻 Author
 
 **Manoj Kumar Giri**
