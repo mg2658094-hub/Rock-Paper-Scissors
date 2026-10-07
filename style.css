@@ -20,6 +20,7 @@ h1 {
   padding: 0 1rem;
 }
 
+/* Game choices */
 .choices {
   display: flex;
   justify-content: center;
@@ -37,8 +38,6 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-
-  /* Remove mobile tap highlight */
   outline: none;
   -webkit-tap-highlight-color: transparent;
   user-select: none;
@@ -61,13 +60,12 @@ img {
   width: 140px;
   object-fit: cover;
   border-radius: 50%;
-
-  /* Remove image tap highlight */
   -webkit-tap-highlight-color: transparent;
   user-select: none;
   -webkit-user-select: none;
 }
 
+/* Scoreboard */
 .score-board {
   display: flex;
   justify-content: center;
@@ -87,6 +85,7 @@ img {
   text-align: center;
 }
 
+/* Game result message */
 .msg-container {
   display: flex;
   justify-content: center;
@@ -104,7 +103,7 @@ img {
   text-align: center;
 }
 
-/* Tablet */
+/* Responsive layout */
 @media (max-width: 768px) {
   .choices {
     gap: 1.5rem;
@@ -129,7 +128,6 @@ img {
   }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
   h1 {
     font-size: 1.8rem;
@@ -175,7 +173,6 @@ img {
   }
 }
 
-/* Small mobile */
 @media (max-width: 350px) {
   .choices {
     gap: 0.4rem;
