@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  background-color: #081b31;
+  color: #fff;
+  min-height: 5rem;
+  text-align: center;
+  line-height: 5rem;
+  padding: 0 1rem;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.choice {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: rgb(202, 12, 40);
+}
+
+img {
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+  padding: 0 1rem;
+}
+
+#user-score,
+#comp-score {
+  font-size: 4rem;
+}
+
+.score {
+  text-align: center;
+}
+
+.msg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 0 1rem;
+}
+
+#msg {
+  background-color: #081b31;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* Tablet responsive layout */
+@media (max-width: 768px) {
+  .choices {
+    gap: 1.5rem;
+  }
+
+  .choice {
+    height: 120px;
+    width: 120px;
+  }
+
+  img {
+    height: 110px;
+    width: 110px;
+  }
+
+  .score-board {
+    gap: 3rem;
+  }
+
+  #msg {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile responsive layout */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+    min-height: 4rem;
+    line-height: 4rem;
+  }
+
+  .choices {
+    gap: 0.7rem;
+    margin-top: 1.5rem;
+  }
+
+  .choice {
+    height: 90px;
+    width: 90px;
+  }
+
+  img {
+    height: 82px;
+    width: 82px;
+  }
+
+  .score-board {
+    gap: 2rem;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  #user-score,
+  #comp-score {
+    font-size: 3rem;
+  }
+
+  .msg-container {
+    margin-top: 3rem;
+  }
+
+  #msg {
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+}
+
+/* Very small mobile screens */
+@media (max-width: 350px) {
+  .choices {
+    gap: 0.4rem;
+    padding: 0 0.5rem;
+  }
+
+  .choice {
+    height: 75px;
+    width: 75px;
+  }
+
+  img {
+    height: 68px;
+    width: 68px;
+  }
+
+  .score-board {
+    gap: 1.5rem;
+  }
+
+  #user-score,
+  #comp-score {
+    font-size: 2.5rem;
+  }
+
+  #msg {
+    font-size: 0.9rem;
+  }
+}
